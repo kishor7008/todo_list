@@ -19,11 +19,6 @@ export default function AppHeader() {
       <Button variant="primary" onClick={() => setModalOpen(true)}>
         Add Task
       </Button>
-      <SelectButton id="status" value={filterStatus} onChange={updatedFilter}>
-        <option value="all">All</option>
-        <option value="incomplete">Incomplete</option>
-        <option value="complete">Complete</option>
-      </SelectButton>
       <TodoModal type="add" modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </div>
   );

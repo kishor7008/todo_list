@@ -122,18 +122,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                   onChange={(e) => setTitle(e.target.value)}
                 />
               </label>
-              <label htmlFor="status">
-                Status
-                <select
-                  name="status"
-                  id="status"
-                  value={status}
-                  onChange={(e) => setStauts(e.target.value)}
-                >
-                  <option value="incomplete">Incomplete</option>
-                  <option value="complete">Complete</option>
-                </select>
-              </label>
+
               <div className={styles.buttonContainer}>
                 <Button type="submit" variant="primary">
                   {type === "update" ? "Update" : "Add"} Task
